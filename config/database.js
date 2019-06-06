@@ -16,7 +16,7 @@ module.exports = {
   | interacting with SQL databases.
   |
   */
-  connection: Env.get('DB_CONNECTION', 'pgsql'),
+  connection: Env.get('DB_CONNECTION', 'pg'),
 
   /*
   |--------------------------------------------------------------------------
@@ -71,7 +71,7 @@ module.exports = {
   pg: {
     client: 'pg',
     connection: {
-      host: Env.get('DB_HOST', 'localhost'),
+      host: Env.get('DB_HOST', 'postgres://zjumzbbzlahvoy:a96c9cb60b075629e8fbb42db4489de21663433d5d5b8f4048818ac4f6aaef48@ec2-23-21-186-85.compute-1.amazonaws.com:5432/d3e81kvmkbidis'),
       port: Env.get('DB_PORT', ''),
       user: Env.get('DB_USER', 'root'),
       password: Env.get('DB_PASSWORD', ''),
